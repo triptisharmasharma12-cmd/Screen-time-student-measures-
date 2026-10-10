@@ -898,11 +898,22 @@ html:A([
 {name:"siblings",value:">3",label:"More than 3 / 3 से अधिक",required:true}
 ])
 },
+
 {
-title:"6. What do your parents do for a living? / आपके माता-पिता क्या काम करते हैं?",
-html:`<label>Parents' occupation / माता-पिता का व्यवसाय</label><textarea name="parents_occupation" rows="3" required placeholder="Write here / यहाँ लिखें"></textarea>`
+  title: "6. What do your parents do for a living? / आपके माता-पिता क्या काम करते हैं?",
+  html:
+    image(IMG.occupation, "Parents' occupation / माता-पिता का व्यवसाय") +
+    `
+      <label>Parents' occupation / माता-पिता का व्यवसाय</label>
+      <textarea
+        name="parents_occupation"
+        rows="3"
+        required
+        placeholder="Write here / यहाँ लिखें"
+      ></textarea>
+    `
 },
-{
+
 title:"7. Do your parents monitor what content you view and how much time you spend using digital gadgets? / क्या आपके माता-पिता इस बात पर नज़र रखते हैं कि आप डिजिटल गैजेट्स पर कौन-सी सामग्री देखते हैं और उनका उपयोग कितने समय तक करते हैं?",
 html:image(IMG.parentsMonitor,"Parents monitoring content")+A([
 {name:"content_monitoring",value:"Yes",label:"Yes / हाँ",required:true},
